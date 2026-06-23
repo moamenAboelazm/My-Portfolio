@@ -23,11 +23,11 @@
                     },
                     colors: {
                         brand: {
-                            dark: '#030712',    /* Gray 950 */
-                            blue: '#3b82f6',    /* Blue 500 */
-                            indigo: '#6366f1',  /* Indigo 500 */
-                            purple: '#8b5cf6',  /* Purple 500 */
-                            green: '#10b981',   /* Emerald 500 */
+                            dark: '#030712',  
+                            blue: '#3b82f6',  
+                            indigo: '#6366f1',
+                            purple: '#8b5cf6',
+                            green: '#10b981', 
                         }
                     }
                 }
@@ -42,7 +42,6 @@
             overflow-x: hidden;
         }
         
-        /* Interactive Particles Background */
         #particles-js {
             position: fixed;
             width: 100%;
@@ -53,7 +52,6 @@
             background-color: #030712;
         }
 
-        /* Glassmorphism Navbar */
         .glass-nav {
             background: rgba(3, 7, 18, 0.75);
             backdrop-filter: blur(20px);
@@ -61,7 +59,6 @@
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* Glass Cards with Mouse Spotlight Effect */
         .glass-card {
             background: rgba(17, 24, 39, 0.6);
             backdrop-filter: blur(16px);
@@ -74,10 +71,9 @@
 
         .glass-card:hover {
             transform: translateY(-8px);
-            border-color: rgba(16, 185, 129, 0.4); /* Green border on hover */
+            border-color: rgba(16, 185, 129, 0.4);
         }
 
-        /* Spotlight Effect Magic */
         .glass-card::before {
             content: "";
             position: absolute;
@@ -87,7 +83,7 @@
             height: 100%;
             background: radial-gradient(
                 800px circle at var(--mouse-x) var(--mouse-y), 
-                rgba(99, 102, 241, 0.15), /* Indigo glow */
+                rgba(99, 102, 241, 0.15),
                 transparent 40%
             );
             opacity: 0;
@@ -105,7 +101,6 @@
             z-index: 1;
         }
 
-        /* Ambient Background Glow */
         .glow-circle {
             position: absolute;
             border-radius: 50%;
@@ -122,13 +117,11 @@
             100% { transform: scale(1.1); opacity: 0.7; }
         }
 
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 6px; }
         ::-webkit-scrollbar-track { background: #030712; }
         ::-webkit-scrollbar-thumb { background: #374151; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #10b981; }
 
-        /* Timeline Styles */
         .timeline-container {
             position: relative;
         }
@@ -163,7 +156,6 @@
             box-shadow: 0 0 15px rgba(16, 185, 129, 0.6);
         }
 
-        /* Gradient Text */
         .text-gradient {
             background: linear-gradient(135deg, #3b82f6, #10b981, #8b5cf6);
             -webkit-background-clip: text;
@@ -598,7 +590,6 @@
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     
     <script>
-        // --- Spotlight Mouse Effect Logic ---
         document.querySelectorAll('.glass-card').forEach(card => {
             card.addEventListener('mousemove', e => {
                 const rect = card.getBoundingClientRect();
@@ -610,7 +601,6 @@
             });
         });
 
-        // --- Live Animated Background (Network Constellation + Code Symbols) ---
         particlesJS("particles-js", {
             "particles": {
                 "number": { "value": 55, "density": { "enable": true, "value_area": 900 } },
@@ -636,7 +626,7 @@
                 "line_linked": {
                     "enable": true,
                     "distance": 160,
-                    "color": "#6366f1", /* Indigo lines */
+                    "color": "#6366f1",
                     "opacity": 0.3,
                     "width": 1.2
                 },
@@ -654,7 +644,7 @@
             "interactivity": {
                 "detect_on": "window",
                 "events": {
-                    "onhover": { "enable": true, "mode": "grab" }, /* Reaching out to cursor */
+                    "onhover": { "enable": true, "mode": "grab" },
                     "onclick": { "enable": true, "mode": "push" },
                     "resize": true
                 },
@@ -666,14 +656,12 @@
             "retina_detect": true
         });
 
-        // --- Initialize Scroll Animations ---
         AOS.init({
             duration: 900,
             once: true,
             offset: 120,
         });
 
-        // --- Typing Effect ---
         var typed = new Typed('#typed-text', {
             strings: [
                 'Backend Developer.', 
@@ -688,7 +676,6 @@
             cursorChar: '|'
         });
 
-        // --- Navbar scroll effect ---
         window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
             if (window.scrollY > 50) {
