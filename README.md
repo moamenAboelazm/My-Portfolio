@@ -15,4 +15,4 @@ Welcome to my personal portfolio! This is a showcase of my journey as a .NET Bac
 * Experienced in teaching programming fundamentals as a GDG Instructor[cite: 1].
 
 ## Visit Live
-[Click here to view the live website]([رابط-الموقع-الخاص-بك](https://moamenaboelazm.github.io/My-Portfolio/)
+Click here to view the live website : (https://moamenaboelazm.github.io/My-Portfolio/)
