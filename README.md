@@ -10,9 +10,9 @@ Welcome to my personal portfolio! This is a showcase of my journey as a .NET Bac
 * **Frontend:** Tailwind CSS, AOS, Three.js (Vanta.js)
 
 ## Highlights
-* Architected scalable E-commerce systems (Marketly, MoooCart)[cite: 1].
-* Specialist rank on Codeforces with ~2,000 solved problems[cite: 1].
-* Experienced in teaching programming fundamentals as a GDG Instructor[cite: 1].
+* Architected scalable E-commerce systems (Marketly, MoooCart).
+* Specialist rank on Codeforces with ~2,000 solved problems.
+* Experienced in teaching programming fundamentals as a GDG Instructor.
 
 ## Visit Live
 Click here to view the live website : (https://moamenaboelazm.github.io/My-Portfolio/)
